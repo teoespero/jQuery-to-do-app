@@ -4,6 +4,7 @@
 	margin: auto;
 }
 
+/* mark the item as completed */
 .completed {
 	color : rgb(128, 128, 128);
 	text-decoration : line-through;
