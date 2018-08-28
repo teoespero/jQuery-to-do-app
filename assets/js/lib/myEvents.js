@@ -34,17 +34,13 @@ $("ul").on("click","span",(function(event){
 	event.stopPropagation();
 }));
 
-$("input[type='text']").keypress(function(event){
-
-	// wait for the ENTER key being pressed
-	if (event.which === 13){
-
-		// grab the next item
-		var toDoText = $(this).val();
-
-		// create a new LI
-		$("ul").append("<li><span>X</span> " + toDoText + "</li>");
+$("input[type='text'").keypress(function(event){
+	if(event.which === 13){
+		// grab new todo text from input
+		var todoText = $(this).val();
 		$(this).val("");
+		// create a new li and add to ul
+		$("ul").append("<li><span>x</span> " + todoText + "</li>");
 	}
 });
 
