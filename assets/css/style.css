@@ -73,6 +73,11 @@ input:focus{
 	float: right;
 }
 
+.fa-minus {
+	float: right;
+}
+
+
 
 .completed {
 	color: gray;

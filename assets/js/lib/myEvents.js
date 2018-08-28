@@ -44,6 +44,10 @@ $("input[type='text'").keypress(function(event){
 	}
 });
 
+$("#toggleInput").click(function(){
+	$("input[type='text'").fadeToggle(500);
+});
+
 
 //////////////////////////////////////////////////////////////////////
 // 	EOF
